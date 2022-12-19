@@ -135,9 +135,67 @@ Console.ResetColor();
 
 Console.ForegroundColor = ConsoleColor.Blue;
 Console.WriteLine("ZADANIE 6");//wielokrotnosc
+//Wyświetl dla podanych dwóch liczb całkowitych ich największą wspólną 
+//wielokrotność.
 Console.ResetColor();
+{
+    int a = 2;
+    int b = 3;
+    for (int i = 1; i < 10; i++)
+    {
+        if (i % a == 0)
+        {
+            if (i % b == 0)
+            {
+                Console.WriteLine(i);
+            }
+        }
+        //         else
+        //         {
+        // Console.WriteLine("TEST");
 
+        //         }
 
+    }
+}
+{
+    int a = 2;
+    int b = 5;
+    for (int i = 1; i < 100; i++)
+    {
+        if (i % a == 0)
+        {
+            if (i % b == 0)
+            {
+                Console.WriteLine(i);
+            }
+        }
+        if (i < 1)
+        {
+            return;
+
+        }
+
+    }
+}
+{
+    int a = 3;
+    int b = 2;
+
+    int c = a > b ? a : b;
+
+    int result;
+
+    for (int i = c; c = int32.MaxValue(25); i++)
+    {
+        if (i % a == 0 && i % b == 0)
+        {
+            result = i;
+            break;
+        }
+    }
+
+}
 
 
 Console.ForegroundColor = ConsoleColor.Blue;
@@ -324,13 +382,17 @@ Console.ForegroundColor = ConsoleColor.Blue;
 Console.WriteLine("DO WHILE");
 Console.ResetColor();
 
-int podstawa10dw = 5;
-int wysokosc10dw = 4;
-int podstawa102dw = 7;
-int i10dw = 0;
-do
 {
-    i10dw++;
+
+    int podstawa10dw = 5;
+    int wysokosc10dw = 4;
+    int podstawa102dw = 7;
+    int i10dw = 0;
+    do
+    {
+        i10dw++;
+    }
+    while (((podstawa10dw + podstawa102dw) * wysokosc10dw) / 2 > i10dw);
+    Console.WriteLine(i10dw);
 }
-while (((podstawa10dw + podstawa102dw) * wysokosc10dw) / 2 > i10dw);
-Console.WriteLine(i10dw);
+
